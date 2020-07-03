@@ -1,0 +1,29 @@
+{
+	"name": "jqApp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"dependencies": {
+		"jquery": "^3.5.1",
+		"live-server": "^1.2.1",
+		"node-sass": "^4.14.1",
+		"npm-run-all": "^4.1.5"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"watch:sass": "node-sass sass/main.sass css/style.css -w",
+		"live-server": "live-server",
+		"dev": "npm-run-all --parallel watch:sass live-server"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kss27thgen/jqApp.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kss27thgen/jqApp/issues"
+	},
+	"homepage": "https://github.com/kss27thgen/jqApp#readme"
+}
