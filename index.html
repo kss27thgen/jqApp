@@ -5,10 +5,71 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/aae2613cc2.js"
+			crossorigin="anonymous"
+		></script>
 		<script src="./node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="js/main.js" defer></script>
 	</head>
 	<body>
-		<p class="test">hello world</p>
+		<header>
+			<section class="header header--normal">
+				<div class="header--normal__left">
+					<i class="fas fa-bars openSidenav"></i>
+					<h2>
+						<i class="fa fa-youtube"></i>
+						<b
+							>Youtube
+							<sup>JP</sup>
+						</b>
+					</h2>
+				</div>
+				<div class="header--normal__right">
+					<i class="fa fa-search" id="openSearchBox"></i>
+					<i class="fa fa-video"></i>
+					<i class="fa fa-th"></i>
+					<i class="fa fa-bell"></i>
+					<i class="fa fa-user-circle"></i>
+				</div>
+			</section>
+
+			<section class="header header--small">
+				<i class="fas fa-arrow-left" id="closeHeaderSmall"></i>
+				<div class="search">
+					<input type="text" />
+					<i class="fas fa-search"></i>
+				</div>
+			</section>
+
+			<section class="header header--learge">
+				<div class="header--learge__left">
+					<i class="fas fa-bars openSidenav"></i>
+					<h2>
+						<i class="fa fa-youtube"></i>
+						<b
+							>Youtube
+							<sup>JP</sup>
+						</b>
+					</h2>
+				</div>
+				<div class="search-box">
+					<input type="text" />
+					<div>
+						<i class="fa fa-search"></i>
+					</div>
+				</div>
+				<div class="header--learge__right">
+					<i class="fa fa-video"></i>
+					<i class="fa fa-th"></i>
+					<i class="fa fa-bell"></i>
+					<i class="fa fa-user-circle"></i>
+				</div>
+			</section>
+		</header>
+
+		<nav class="sidenav"></nav>
+
+		<main></main>
 	</body>
 </html>
