@@ -142,3 +142,71 @@ i
 
 main
     height: 80vh
+
+.gallery
+    height: 30rem
+    ul
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        height: 100%
+        .photo-panel
+            width: 25%
+            min-width: 20rem
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: all .5s
+            &-1
+                background-image: url('../images/stairs.jpeg')
+                background-position: center
+                &:hover
+                    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, .2), rgba(255, 255, 255, .8)), url('../images/stairs.jpeg')
+            &-2
+                background-image: url('../images/lady.jpeg')
+                background-position: center
+                &:hover
+                    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, .2), rgba(255, 255, 255, .8)), url('../images/lady.jpeg')
+            &-3
+                background-image: url('../images/berrry.jpeg')
+                background-position: center
+                &:hover
+                    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, .2), rgba(255, 255, 255, .8)), url('../images/berrry.jpeg')
+            &-4
+                background-image: url('../images/tower.jpeg')
+                background-position: center
+                &:hover
+                    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, .2), rgba(255, 255, 255, .8)), url('../images/tower.jpeg')
+            
+            &:hover .text-box
+                transform: translateY(-10px)
+            &:hover .text-box .btn
+                opacity: 1
+                &:active
+                    transform: translateY(10px)
+
+            .text-box
+                color: #fff
+                transition: all .5s
+                text-align: center
+                small
+                    display: inline-block
+                    font-size: 1rem
+                    margin-bottom: 1rem
+                h6
+                    font-size: 1.6rem
+                    font-weight: 700
+                    margin-bottom: 2rem
+                .btn
+                    background: #fff
+                    color: red
+                    display: inline-block
+                    padding: .7rem 2rem
+                    border-radius: 30px
+                    opacity: 0
+                    transition: all .5s
+                    font-size: .9rem
+                    font-weight: 300
+                    &:active
+                        transform: translateY(1px)

@@ -141,3 +141,69 @@ i {
 
 main {
   height: 80vh; }
+
+.gallery {
+  height: 30rem; }
+  .gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%; }
+    .gallery ul .photo-panel {
+      width: 25%;
+      min-width: 20rem;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all .5s; }
+      .gallery ul .photo-panel-1 {
+        background-image: url("../images/stairs.jpeg");
+        background-position: center; }
+        .gallery ul .photo-panel-1:hover {
+          background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.8)), url("../images/stairs.jpeg"); }
+      .gallery ul .photo-panel-2 {
+        background-image: url("../images/lady.jpeg");
+        background-position: center; }
+        .gallery ul .photo-panel-2:hover {
+          background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.8)), url("../images/lady.jpeg"); }
+      .gallery ul .photo-panel-3 {
+        background-image: url("../images/berrry.jpeg");
+        background-position: center; }
+        .gallery ul .photo-panel-3:hover {
+          background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.8)), url("../images/berrry.jpeg"); }
+      .gallery ul .photo-panel-4 {
+        background-image: url("../images/tower.jpeg");
+        background-position: center; }
+        .gallery ul .photo-panel-4:hover {
+          background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.8)), url("../images/tower.jpeg"); }
+      .gallery ul .photo-panel:hover .text-box {
+        transform: translateY(-10px); }
+      .gallery ul .photo-panel:hover .text-box .btn {
+        opacity: 1; }
+        .gallery ul .photo-panel:hover .text-box .btn:active {
+          transform: translateY(10px); }
+      .gallery ul .photo-panel .text-box {
+        color: #fff;
+        transition: all .5s;
+        text-align: center; }
+        .gallery ul .photo-panel .text-box small {
+          display: inline-block;
+          font-size: 1rem;
+          margin-bottom: 1rem; }
+        .gallery ul .photo-panel .text-box h6 {
+          font-size: 1.6rem;
+          font-weight: 700;
+          margin-bottom: 2rem; }
+        .gallery ul .photo-panel .text-box .btn {
+          background: #fff;
+          color: red;
+          display: inline-block;
+          padding: .7rem 2rem;
+          border-radius: 30px;
+          opacity: 0;
+          transition: all .5s;
+          font-size: .9rem;
+          font-weight: 300; }
+          .gallery ul .photo-panel .text-box .btn:active {
+            transform: translateY(1px); }
